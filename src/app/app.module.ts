@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { HereMapComponent } from './here-map/here-map.component';
+import { GeolocationComponent } from './geolocation/geolocation.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
+  ],
+  declarations: [
+    AppComponent,
+    HereMapComponent,
+    GeolocationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
